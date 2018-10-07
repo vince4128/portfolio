@@ -1,0 +1,10 @@
+.a-navbar-item{
+    display: flex-item;
+    cursor:pointer;
+
+    &.a-navbar-item--center{
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+

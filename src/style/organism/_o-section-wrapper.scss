@@ -1,0 +1,20 @@
+section{
+    display:flex;
+    width:100%;
+    min-height:100vh;
+
+    &.section--hero{
+        padding-top: 2rem;
+        //background-color: red;
+    }
+
+    &.section--background,
+    .patterns-content{
+        position:absolute;
+        z-index: -999;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+    }
+}
