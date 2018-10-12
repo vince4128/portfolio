@@ -1,11 +1,24 @@
 section{
+    padding:0 1rem 0 1rem;
     display:flex;
     width:100%;
     min-height:100vh;
+    padding-top: 2rem;
 
-    &.section--hero{
-        padding-top: 2rem;
-        //background-color: red;
+    &.section--hero{        
+        background-color: rgba(0,44,254,0.3);
+    }
+
+    &.section--projects{        
+        background-color: rgba(0,44,254,0.5);
+    }
+
+    &.section--tools{        
+        background-color: rgba(0,44,254,0.7);
+    }
+
+    &.section--contact{        
+        background-color: rgba(0,44,254,0.9);
     }
 
     &.section--background,
