@@ -11,10 +11,10 @@ const Hero = (props) => {
     });
 
     return(
-        <section className="section--hero">
-            <BackgroundPatterns pttrn={pattern}>
+        <section className="section--hero" id="home">
+            {/*<BackgroundPatterns pttrn={pattern}>*/}
                 <h1>Hero</h1>
-            </BackgroundPatterns>
+            {/*</BackgroundPatterns>*/}
         </section>
     )
 }
