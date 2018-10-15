@@ -11,7 +11,7 @@ class Projects extends Component{
             <section id="projects" className="section--projects o-projects">
                 <article className="o-projects__webapp"></article>
                 <article className="o-projects__sitemu"></article>
-                <article className="o-projects__sitlars"></article>
+                <article className="o-projects__sitelars"></article>
                 <article className="o-projects__newproject"></article>
             </section>
         )
