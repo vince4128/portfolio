@@ -3,28 +3,67 @@
     .o-projects{
 
         display:grid;
-        grid-template:
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:
         'webapp webapp webapp'
         'sitemu sitelars newproject';
 
         &__webapp{
-            grid-area: 'webapp';
-            background-color:rgba(255,255,255,0.2);
+            position:relative;
+            grid-area: webapp;
+            //background-color:rgba(255,255,255,0.2);
+            background:url('/img/bg2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            //background-attachment: fixed;
+            /*&:after{
+                content:"";
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                background-color: rgba(0,0,0,0.5);
+            }*/
         }
 
         &__sitemu{
-            grid-area: 'sitemu';
+            position:relative;
+            grid-area: sitemu;
             background-color:rgba(255,255,255,0.4);
+            background:url('/img/bg3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            //background-attachment: fixed;
+            /*&:after{
+                content:"";
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                background-color: rgba(0,0,0,0.5);
+            }*/
         }
 
         &__sitelars{
-            grid-area: 'sitelars';
+            position:relative;
+            grid-area: sitelars;
+            background-color:rgba(255,255,255,1);
             background-color:rgba(255,255,255,0.4);
+            background:url('/img/bg4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         &__newproject{
-            grid-area: 'newproject';
+            position:relative;
+            grid-area: newproject;
             background-color:rgba(255,255,255,0.6);
+            background-color:rgba(255,255,255,0.4);
+            background:url('/img/bg5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
     }
