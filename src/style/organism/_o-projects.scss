@@ -15,8 +15,9 @@
             background:url('/img/bg2.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            z-index:1;
             //background-attachment: fixed;
-            /*&:after{
+            &:after{
                 content:"";
                 position:absolute;
                 top:0;
@@ -24,7 +25,8 @@
                 right:0;
                 left:0;
                 background-color: rgba(0,0,0,0.5);
-            }*/
+                z-index:-1;
+            }
         }
 
         &__sitemu{
@@ -34,8 +36,9 @@
             background:url('/img/bg3.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            z-index:1;
             //background-attachment: fixed;
-            /*&:after{
+            &:after{
                 content:"";
                 position:absolute;
                 top:0;
@@ -43,7 +46,8 @@
                 right:0;
                 left:0;
                 background-color: rgba(0,0,0,0.5);
-            }*/
+                z-index:-1;
+            }
         }
 
         &__sitelars{
@@ -54,16 +58,37 @@
             background:url('/img/bg4.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            z-index:1;
+            &:after{
+                content:"";
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                background-color: rgba(0,0,0,0.7);
+                z-index:-1;
+            }
         }
 
         &__newproject{
             position:relative;
             grid-area: newproject;
             background-color:rgba(255,255,255,0.6);
-            background-color:rgba(255,255,255,0.4);
             background:url('/img/bg5.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            z-index:1;
+            &:after{
+                content:"";
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                background-color: rgba(0,0,0,0.8);
+                z-index:-1;
+            }
         }
 
     }

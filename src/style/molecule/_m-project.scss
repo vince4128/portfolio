@@ -1,0 +1,36 @@
+.m-project{
+
+    color:#fff;
+    padding:1rem;
+
+    &.m-project--wide{       
+
+        h2{
+            padding-top:2rem;
+        }        
+
+    }
+
+    &__info{
+
+        display: block;
+        position:absolute;
+        bottom:1rem;
+
+        &__legend{
+
+        }
+    
+        &__tools{
+            list-style: none;
+            padding:0;
+            margin:0;
+
+            li{
+                display: inline-block;
+            }
+        }
+
+    }    
+
+}
