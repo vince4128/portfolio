@@ -15,9 +15,6 @@ class App extends Component {
         <Project/>
         <Tools/>
         <Contact/>
-        <p>
-          Hello
-          </p>   
       </div>
     );
   }
