@@ -15,9 +15,12 @@ const Hero = (props) => {
             {/*<BackgroundPatterns pttrn={pattern}>*/}
                 <div className="m-hero">
                     <h1>John Doe</h1>
-                    <h2>fdgfdg ghfghf fghfghh</h2>
+                    <h2>Front-end developper</h2>
                 </div>                
             {/*</BackgroundPatterns>*/}
+            <article className="m-arrow-next">
+            NEXT
+            </article>            
         </section>
     )
 }
