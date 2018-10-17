@@ -6,6 +6,17 @@
     z-index:99;
     //height:2rem;      
     //background-color:yellow;
+    transition: all .5s ease;
+
+    &--scrolled{
+        background-color: #fff;
+    }
+
+    &.o-navbar--scrolled{
+        ul li a{
+            padding: .3rem;
+        }
+    }
 
     ul{
         list-style: none;

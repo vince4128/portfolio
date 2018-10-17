@@ -3,10 +3,42 @@ import { Route, Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait)
+    }
+}
+
 class Header extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            scrollPositionY: 0
+        }
+    }
+
+    componentDidMount(){
+        return window.addEventListener('scroll', debounce(this.handleScroll, 32))
+    }
+
+    componentWillUnmount(){
+        return window.removeEventListener('scroll', debounce(this.handleScroll, 32))
+    }
+
+    handleScroll = () => {
+        const scrollPositionY = +window.scrollY;
+        return this.setState({ scrollPositionY })
+    }
+
     render(){
+
+        const isScrolling = !!this.state.scrollPositionY
+
         return(
-            <nav className="o-navbar">
+            <nav className={(isScrolling) ? 'o-navbar o-navbar--scrolled' : 'o-navbar'}>
                 <ul>
                     <li>
                         <a href="">Logo</a>
