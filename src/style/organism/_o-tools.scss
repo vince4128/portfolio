@@ -2,12 +2,14 @@
 
     display:grid;
     grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:40vh 30vh 30vh;
     grid-template-areas:
     'js css3 html5'
     'toolsdetail toolsdetail toolsdetail'
     'othertool othertool othertool';
 
     &__js{
+        padding-top:2rem;
         position:relative;
         grid-area: js;
         //background-color:rgba(255,255,255,0.2);
@@ -29,6 +31,7 @@
     }
 
     &__css{
+        padding-top:2rem;
         position:relative;
         grid-area: css3;
         //background-color:rgba(255,255,255,0.2);
@@ -50,6 +53,7 @@
     }
 
     &__html5{
+        padding-top:2rem;
         position:relative;
         grid-area: html5;
         //background-color:rgba(255,255,255,0.2);

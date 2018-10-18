@@ -2,6 +2,21 @@
 
     color:#fff;
     padding:1rem;
+    cursor: pointer;
+    transition:all .3s ease-in;
+    border-bottom:2px solid #fff;
+
+    & + &{
+        border-right:2px solid #fff;
+    }
+
+    &:last-child{
+        border-right:none;
+    }
+
+    h2{
+        color:$darkgrey;
+    }
 
     &.m-project--wide{       
 
@@ -12,10 +27,20 @@
     }
 
     &__info{
-
+        
         display: block;
         position:absolute;
-        bottom:1rem;
+        bottom:0;
+        left:0;
+        width:100%;
+        padding:1rem;
+        //background-color: rgba(0,0,0,0.6);
+        background-color: #fff;
+        color:$darkgrey;
+
+        &:hover{
+            background-size: 110%;
+        }
 
         &__legend{
 
