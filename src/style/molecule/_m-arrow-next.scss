@@ -8,4 +8,8 @@
     width: 75px;
     fill:$darkgrey;
     //background:$darkgrey;
+    transition: all .3s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
