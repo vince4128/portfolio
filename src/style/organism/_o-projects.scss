@@ -1,96 +1,21 @@
-@supports (display:grid) {
+/*@supports (display:grid) {
     
     .o-projects{
 
         display:grid;
-        grid-template-columns:repeat(3, 1fr);
-        grid-template-areas:
-        'webapp webapp webapp'
-        'sitemu sitelars newproject';
-
-        &__webapp{
-            position:relative;
-            grid-area: webapp;
-            //background-color:rgba(255,255,255,0.2);
-            background:url('/img/webapp.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index:1;
-            //background-attachment: fixed;
-            &:after{
-                content:"";
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                //background-color: rgba(255,255,255,0.5);
-                z-index:-1;
-            }
-        }
-
-        &__sitemu{
-            position:relative;
-            grid-area: sitemu;
-            background-color:rgba(255,255,255,0.4);
-            background:url('/img/sitemu.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index:1;
-            //background-attachment: fixed;
-            &:after{
-                content:"";
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                //background-color: rgba(255,255,255,0.5);
-                z-index:-1;
-            }
-        }
-
-        &__sitelars{
-            position:relative;
-            grid-area: sitelars;
-            background-color:rgba(255,255,255,1);
-            background-color:rgba(255,255,255,0.4);
-            background:url('/img/sitelars.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index:1;
-            &:after{
-                content:"";
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                //background-color: rgba(255,255,255,0.5);
-                z-index:-1;
-            }
-        }
-
-        &__newproject{
-            position:relative;
-            grid-area: newproject;
-            background-color:rgba(255,255,255,0.6);
-            background:url('/img/bg5.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index:1;
-            &:after{
-                content:"";
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                //background-color: rgba(255,255,255,0.5);
-                z-index:-1;
-            }
-        }
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: auto;
+        padding: 3rem 0;
 
     }
 
+}*/
+
+.o-projects{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width:100%;
+    margin: 0;
+    padding: 3rem 0;
 }
