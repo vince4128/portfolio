@@ -16,7 +16,7 @@ const Hero = (props) => {
             {/*<BackgroundPatterns pttrn={pattern}>*/}
                 <div className="m-hero">
                     <h1>John Doe</h1>
-                    <h2>Front-end developper</h2>
+                    <h2>Front-end developer</h2>
                 </div>                
             {/*</BackgroundPatterns>*/}
             <article className="m-arrow-next">
@@ -26,7 +26,14 @@ const Hero = (props) => {
                     <path d="M9.853 16.353l4-4c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-3.146 3.147v-10.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v10.293l-3.147-3.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.353s0.049 0.256 0.147 0.353l4 4c0.195 0.195 0.512 0.195 0.707 0z"></path>
                     </svg>
                 </AnchorLink>            
-            </article>            
+            </article>
+            {/*<div className="a-triangle--bg">
+            </div>*/}
+            <div className="polygon">
+                <svg preserveAspectRatio="none" viewBox="0 0 100 100">
+                    <polygon points="0,100 100,0 0,0" opacity="1"></polygon>
+                </svg>
+            </div>
         </section>
     )
 }

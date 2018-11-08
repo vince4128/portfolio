@@ -9,6 +9,7 @@
     fill:$darkgrey;
     //background:$darkgrey;
     transition: all .3s ease;
+    z-index:5;
     &:hover{
         transform: scale(1.1);
     }

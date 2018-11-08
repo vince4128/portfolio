@@ -40,6 +40,11 @@ class Projects extends Component{
                     <Project project={tempProject.project3}></Project>
                     <Project project={tempProject.project4}></Project>
                 </div>
+                <div className="polygon">
+                    <svg preserveAspectRatio="none" viewBox="0 0 100 100">
+                        <polygon points="100,100 100,0 0,100" opacity="1"></polygon>
+                    </svg>
+                </div>
             </section>
         )
     }
