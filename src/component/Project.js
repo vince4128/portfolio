@@ -11,7 +11,7 @@ const Project = (props) => {
                     <p>{props.project.description}</p>
                     <p>{props.project.tech}</p>
                 </div>                
-            </article>
+            </article>            
         </div>
     )
 
