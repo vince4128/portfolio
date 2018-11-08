@@ -11,10 +11,20 @@
             display: inline-block;
             text-align: center;
             span{
-                &:before{
+                & svg{
                     transform: rotate(-45deg);
                     display: inline-block;
                     line-height: inherit;
+                    max-width: 7rem;
+                    max-height: 7rem;                    
+                }
+                & h1{
+                    transform: rotate(-45deg);
+                    display: inline-block;
+                    line-height: 5rem;
+                    //line-height: inherit;
+                    /*max-width: 7rem;
+                    max-height: 7rem;*/
                 }
             }
         }
@@ -28,9 +38,9 @@
     //border: 1px solid hsla(0,0%,56.5%,.5);
     border: 1px solid #fff;
     display: inline-block;
-    height: 8em;
-    line-height: 8em;
+    height: 8rem;
+    line-height: 8rem;
     margin: 0;
     text-align: center;
-    width: 8em;
+    width: 8rem;
 }
