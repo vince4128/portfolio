@@ -183,6 +183,9 @@ const Tools = (props) => {
                         </span>                        
                     </li>                    
                 </ul>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo arcu at metus bibendum, vel finibus dui pharetra. Aliquam non mi massa. Quisque aliquam quam vel posuere sollicitudin. Morbi eu dignissim nisl. Integer ut sem pulvinar, fringilla urna non, placerat metus. Cras feugiat diam mi, vitae auctor erat convallis nec. Pellentesque facilisis nisl eget diam ullamcorper, eget scelerisque dui viverra. Vestibulum in augue lectus.
+                </p>
             </div>
             {/*<div className="polygon">
                     <svg preserveAspectRatio="none" viewBox="0 0 100 100">
