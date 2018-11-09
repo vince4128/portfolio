@@ -15,7 +15,7 @@ const Hero = (props) => {
         <section className="section--hero" id="home">
             {/*<BackgroundPatterns pttrn={pattern}>*/}
                 <div className="m-hero">
-                    <h1>John Doe</h1>
+                    <h1 className="animated fadeInLeft">John Doe</h1>
                     <h2>Front-end developer</h2>
                 </div>                
             {/*</BackgroundPatterns>*/}
