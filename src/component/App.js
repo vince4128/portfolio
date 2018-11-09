@@ -62,10 +62,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>
-          Scroll : {this.state.scrollPositionY}<br/>
-          HeaderY : {JSON.stringify(this.state.elementPosition)}<br/>
-        </h1>
         <div ref={this.HeaderRef}>
           <Header/>
         </div>
