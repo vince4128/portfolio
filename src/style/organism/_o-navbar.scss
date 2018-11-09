@@ -45,6 +45,9 @@
                 text-decoration: none;
                 padding:1rem 0.5rem;        
                 transition: .3s all;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: .9rem;
                 &:hover{
                     text-decoration: underline;
                 }                   
