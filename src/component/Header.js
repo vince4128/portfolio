@@ -20,6 +20,10 @@ class Header extends Component {
         }
     }
 
+    checkClass(toCheck){
+        return toCheck === this.props.active ? true : false;        
+    }
+
     componentDidMount(){
         return window.addEventListener('scroll', debounce(this.handleScroll, 32))
     }
@@ -43,16 +47,16 @@ class Header extends Component {
                     <li>
                         <a href="">Logo</a>
                     </li>
-                    <li>
+                    <li className={this.checkClass('Hero') ? 'a-navbar-item--active' : ''}>
                         <AnchorLink href='#home'>Home</AnchorLink>
                     </li>
-                    <li>
+                    <li className={this.checkClass('Project') ? 'a-navbar-item--active' : ''}>
                         <AnchorLink href='#projects'>Projects</AnchorLink>
                     </li>
-                    <li>
+                    <li className={this.checkClass('Tools') ? 'a-navbar-item--active' : ''}>
                         <AnchorLink href='#tools'>Tools</AnchorLink>
                     </li>
-                    <li>
+                    <li className={this.checkClass('Contact') ? 'a-navbar-item--active' : ''}>
                         <AnchorLink href='#contact'>Contact</AnchorLink>
                     </li>
                 </ul>
