@@ -7,9 +7,9 @@ const Project = (props) => {
             <article>
                 <img src="/img/project-placeholder.jpg" />
                 <div>
-                    <h1>{props.project.title}</h1>
-                    <p>{props.project.description}</p>
-                    <p>{props.project.tech}</p>
+                    <h2 className="m-project__title">{props.project.title}</h2>
+                    <p className="m-project__description">{props.project.description}</p>
+                    <p className="m-project__tech">{props.project.tech}</p>
                 </div>                
             </article>            
         </div>
