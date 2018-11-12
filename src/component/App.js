@@ -58,7 +58,6 @@ class App extends Component {
   }
 
   checkPosition(){
-    console.log('check');
     const sections = Object.assign({}, this.state.elementPosition);
     let section = "";
     Object.keys(sections)
@@ -74,7 +73,6 @@ class App extends Component {
   handleScroll = () => {
     const scrollPositionY = +window.scrollY;
     const elementPosition = this.getPosition();
-    console.log(elementPosition);
     this.setState({ scrollPositionY, elementPosition });
     //return 
   }
