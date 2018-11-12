@@ -25,10 +25,19 @@
                     //line-height: inherit;
                     /*max-width: 7rem;
                     max-height: 7rem;*/
+
+                    @include mq('tablet-small', 'max') {
+
+                        font-size:1.3rem;
+                        line-height: 4rem;
+                
+                    }
+
                 }
             }
         }
     }
+    
 }
 
 .m-tools-icon__icon{
@@ -43,4 +52,12 @@
     margin: 0;
     text-align: center;
     width: 8rem;
+
+    @include mq('tablet-small', 'max') {
+
+        height:6rem;
+        line-height: 6rem;
+        width:6rem;
+
+    }
 }
