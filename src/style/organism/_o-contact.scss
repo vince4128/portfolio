@@ -1,0 +1,58 @@
+.o-contact{
+    padding-top:5rem;
+
+    &__form{
+        display: block;
+        width:100%;
+        max-width:800px;
+        margin: 0 auto;
+        padding:0 1.5rem;
+        z-index:2;
+
+        fieldset{
+            //border:3px solid #fff;
+            border:none;
+            padding:1rem;
+            margin-bottom:1.5rem;
+        }
+
+        input,label,textarea{
+            display:block;
+            border-radius:3px;
+        }
+
+        label{
+            margin:.4rem;
+            font-size:1.5rem;
+        }
+
+        input{
+            width:100%;
+            border:none;
+            height:2.5rem;
+            line-height:2.5rem;
+            padding:0 .5rem;
+            //border-bottom:3px solid darken(lightblue, 15%);
+            background:darken(lightblue, 15%);
+            color:#fff;
+            transform: all .3s ease-out;
+
+            &:focus{
+                height:2.6rem;
+                line-height: 2.6rem;               
+                //border-left: 5px solid #fff;
+            }
+        }
+
+        textarea{
+            width:100%;
+            padding:.5rem;
+            border:none;
+            background:darken(lightblue, 15%);
+            color:#fff;
+            transform: all .3s ease-out;
+        }
+
+    }
+
+}
