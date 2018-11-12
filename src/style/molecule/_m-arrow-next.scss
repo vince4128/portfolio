@@ -8,7 +8,7 @@
     width: 75px;
     fill:$darkgrey;
     //background:$darkgrey;
-    transition: all .3s ease;
+    transition: all .3s ease-out;
     z-index:5;
     &:hover{
         transform: scale(1.1);
