@@ -19,4 +19,8 @@
     margin: 0;
     padding: 3rem 0;
     z-index:5;
+    
+    &--hide{
+        height:0;
+    }
 }
