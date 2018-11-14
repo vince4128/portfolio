@@ -4,6 +4,12 @@ body{
     min-height:100%;
 }
 
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 *{
     box-sizing: border-box;
 }
