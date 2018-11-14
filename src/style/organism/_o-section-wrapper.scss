@@ -14,7 +14,8 @@ section{
         align-items: center;
     }
 
-    &.section--projects{        
+    &.section--projects{
+        flex-direction: column;       
         background-color:$lightgrey;
         background:url('/img/bg1.jpg');
         background-size: cover;
@@ -24,6 +25,11 @@ section{
 
     &.section--tools{        
         background-color: lightblue;
+        /*height:auto;
+        min-height:auto;*/
+        padding:3rem 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
     &.section--contact{        
