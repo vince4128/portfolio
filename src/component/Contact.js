@@ -7,17 +7,17 @@ const Contact = (props) => {
             <h1>Contact</h1>
                 <fieldset>                    
                     <label for="nom">Nom</label>
-                    <input type="text"></input>
+                    <input type="text" placeholder="Votre nom"></input>
                     <label>Prénom</label>
-                    <input type="text"></input>
-                    <label>Mail de contact</label>
-                    <input type="mail"></input>
-                </fieldset>
-                <fieldset>
+                    <input type="text" placeholder="Votre prénom"></input>
+                    <label>Email de contact</label>
+                    <input type="mail" placeholder="Votre email de contact"></input>
+                    <label>Objet</label>
+                    <input type="text" placeholder="Objet du message"></input>
                     <label>Message</label>
-                    <textarea></textarea>
+                    <textarea placeholder="Votre message"></textarea>
                 </fieldset>
-                <button type="submit">envoyer</button>
+                <button className="m-button" type="submit">Envoyer</button>
             </form>
             <div className="polygon">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 100">
