@@ -23,7 +23,7 @@ const Project = (props) => {
                         </div> - not full width opened project*/}
                         <div className="m-project__link">
                             <hr/>
-                            <a className="m-button" href="http://www.google.fr">Voir le projet</a>                                
+                            <a className="m-button" target="_blank" href="http://www.google.fr">Voir le projet</a>
                         </div>              
                     </article>
                     {/* - Full width opened project

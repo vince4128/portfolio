@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Project from './Project';
+import { connect } from 'react-redux';
+import { fetchData } from '../actions/data.action';
 
 class Projects extends Component{
 
@@ -23,44 +25,29 @@ class Projects extends Component{
         alert("focus " + this.state.focus + " selectedProject " + this.state.selectedProject);
     }
 
-    render(){
+    componentDidMount(){
+        this.props.fetchData();
+    }
 
-        const tempProject = {
-            project1:{
-                id:0,
-                title:"Project1",
-                description:"Description du projet 1",
-                tech:"html, css, js"
-            },
-            project2:{
-                id:1,
-                title:"Project2",
-                description:"Description du projet 2",
-                tech:"html, css, js"
-            },
-            project3:{
-                id:2,
-                title:"Project3",
-                description:"Description du projet 3",
-                tech:"html, css, js"
-            },
-            project4:{
-                id:3,
-                title:"Project4",
-                description:"Description du projet 4",
-                tech:"html, css, js"
-            },
-        }
+    renderList(){
+        const data = Object.assign({}, this.props.projets.data);
+        return Object.keys(data)
+            .map((key) => {
+                const renderData = data[key];
+                return(
+                    <Project onProjectSelect={(id)=>{this.showProject(id)}} project={renderData} selectedProject={this.state.selectedProject} focus={this.state.focus} closeProject={this.closeProject}></Project>
+                )
+            })
+    }
+
+    render(){ 
 
         return(
             <section id="projects" className="section--projects">
                 {/*<div className={(this.state.focus ? "slideOutLeft o-projects--hide" : "slideInLeft") + " animated o-projects"}>*/}
                 <div className="o-projects">
-                    <Project onProjectSelect={(id)=>{this.showProject(id)}} project={tempProject.project1} selectedProject={this.state.selectedProject} focus={this.state.focus} closeProject={this.closeProject}></Project>
-                    <Project onProjectSelect={(id)=>{this.showProject(id)}} project={tempProject.project2} selectedProject={this.state.selectedProject} focus={this.state.focus} closeProject={this.closeProject}></Project>
-                    <Project onProjectSelect={(id)=>{this.showProject(id)}} project={tempProject.project3} selectedProject={this.state.selectedProject} focus={this.state.focus} closeProject={this.closeProject}></Project>
-                    <Project onProjectSelect={(id)=>{this.showProject(id)}} project={tempProject.project4} selectedProject={this.state.selectedProject} focus={this.state.focus} closeProject={this.closeProject}></Project>
-                </div>
+                    {this.renderList()}
+                </div>                
                 {/*<div className={(this.state.focus ? "slideInRight m-project-focus--visible" : "") + " animated m-project-focus"}>
                     <ProjectFocus project={this.state.selectedProject}/>
         </div>*/}
@@ -75,4 +62,8 @@ class Projects extends Component{
 
 }
 
-export default Projects;
+function mapStateToProps(state){
+    return {projets:state.projets}
+}
+
+export default connect(mapStateToProps, { fetchData })(Projects);
