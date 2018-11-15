@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 const Contact = (props) => {
     return(
@@ -6,15 +7,15 @@ const Contact = (props) => {
             <form className="o-contact__form">
             <h1>Contact</h1>
                 <fieldset>                    
-                    <label for="nom">Nom</label>
+                    <label htmlFor="nom">Nom</label>
                     <input type="text" placeholder="Votre nom"></input>
-                    <label>Prénom</label>
+                    <label htmlFor="prenom">Prénom</label>
                     <input type="text" placeholder="Votre prénom"></input>
-                    <label>Email de contact</label>
+                    <label htmlFor="email">Email de contact</label>
                     <input type="mail" placeholder="Votre email de contact"></input>
-                    <label>Objet</label>
+                    <label htmlFor="objet">Objet</label>
                     <input type="text" placeholder="Objet du message"></input>
-                    <label>Message</label>
+                    <label htmlFor="message">Message</label>
                     <textarea placeholder="Votre message"></textarea>
                 </fieldset>
                 <button className="m-button" type="submit">Envoyer</button>
