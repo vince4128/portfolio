@@ -32,4 +32,23 @@
             color: darken(lightblue,20%);
         }
     }
+
+    &:disabled{
+        background-color: lightgray;
+        color:gray;
+
+        &:hover{
+            transform:none;
+            box-shadow: none;
+            background-color: lightgray;            
+        }
+    }
+
+    & + .m-button{
+        margin-left: 1rem;
+    }
+
+    &-group--form{
+        margin-top: 2rem;
+    }
 }
