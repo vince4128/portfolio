@@ -1,5 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import { postContact } from '../actions/form.action';
+import { connect } from 'react-redux';
 import axios from 'axios';
 
 const validate = values => {
@@ -36,22 +38,22 @@ const renderField = ({
         <div>
             <input {...input} placeholder={placeholder} type={type} />
             {touched &&
-                ((error && <span>{error}</span>) ||
+                ((error && <span class="a-field--error animated fadeInTop">{error}</span>) ||
                 (warning && <span>{warning}</span>))}
         </div>
     </div>
 )
 
 const onSubmit = (values) => {
-    alert('boum');
-    console.log('BBBOOOOUUUUMMMM!!!!')
+    console.log('Envoi du mail ', values);
+    postContact(values);
 }
 
 const Contact = (props) => {
 
     const { handleSubmit, pristine, reset, submitting } = props;
-    return(
-        <section id="contact" className="section--contact o-contact">             
+    return(        
+        <section id="contact" className="section--contact o-contact">              
             <form onSubmit={handleSubmit(onSubmit)} className="o-contact__form">
             <h1>Contact</h1>
                 <div>
@@ -126,4 +128,4 @@ const Contact = (props) => {
 export default reduxForm({
     form:'contactForm',
     validate
-})(Contact);
+})(connect(null, { postContact })(Contact));
