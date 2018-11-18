@@ -1,11 +1,11 @@
 import {
     FETCH_DATA
-} from '../actions/type';
+} from '../actions/types';
 
 export default (state = {}, action ) => {
     switch(action.type){
         case FETCH_DATA:
-            const data = {};
+            const data = action.payload;
             return data;
 
         default:

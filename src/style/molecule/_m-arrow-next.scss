@@ -1,0 +1,16 @@
+.m-arrow-next{
+    bottom: 0;
+    height: 88px;
+    left: 50%;
+    margin-left: -32px;
+    overflow: hidden;
+    position: absolute;
+    width: 75px;
+    fill:$darkgrey;
+    //background:$darkgrey;
+    transition: all .3s ease-out;
+    z-index:5;
+    &:hover{
+        transform: scale(1.1);
+    }
+}

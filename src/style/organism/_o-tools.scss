@@ -1,0 +1,92 @@
+.o-tools{
+
+    padding-top:5rem;
+    max-width:100%;
+    /*display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:40vh 30vh 30vh;
+    grid-template-areas:
+    'js css3 html5'
+    'toolsdetail toolsdetail toolsdetail'
+    'othertool othertool othertool';
+
+    &__js{
+        padding-top:2rem;
+        position:relative;
+        grid-area: js;
+        //background-color:rgba(255,255,255,0.2);
+        background:url('/img/bg2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index:1;
+        //background-attachment: fixed;
+        &:after{
+            content:"";
+            position:absolute;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            background-color: rgba(0,0,255,0.2);
+            z-index:-1;
+        }
+    }
+
+    &__css{
+        padding-top:2rem;
+        position:relative;
+        grid-area: css3;
+        //background-color:rgba(255,255,255,0.2);
+        background:url('/img/bg3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index:1;
+        //background-attachment: fixed;
+        &:after{
+            content:"";
+            position:absolute;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            background-color: rgba(0,0,255,0.4);
+            z-index:-1;
+        }
+    }
+
+    &__html5{
+        padding-top:2rem;
+        position:relative;
+        grid-area: html5;
+        //background-color:rgba(255,255,255,0.2);
+        background:url('/img/bg4.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index:1;
+        //background-attachment: fixed;
+        &:after{
+            content:"";
+            position:absolute;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            background-color: rgba(0,0,255,0.6);
+            z-index:-1;
+        }
+    }
+
+    &__toolsdetail{
+        position:relative;
+        grid-area: toolsdetail;
+        background-color: red;
+    }
+
+    &__othertool{
+        position:relative;
+        grid-area: othertool;
+        background-color: green;
+    }
+*/
+
+}

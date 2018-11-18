@@ -2,14 +2,20 @@
 @import "../../node_modules/normalize.css/normalize.css";
 //ANIMATION
 @import "../../node_modules/animate.css/animate.min.css";
+//VARIABLE
+@import "./variable/variable";
 //GENERAL
 @import "./general/general.scss";
 //MIXINS
-@import "./mixins/fontface";
+@import "./mixins/mixins";
 //TYPOGRAPHY
 @import "./typography/typography";
+//ANIMATION
+@import "./animation/animation.scss";
 
 //ORGANISM
 @import "./organism/organism.scss";
+//MOLECULE
+@import "./molecule/molecule";
 //ATOM
 @import "./atom/atom";
