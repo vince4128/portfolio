@@ -11,7 +11,7 @@ const Project = (props) => {
                 >
                     <article className="m-project__thumb">
                         {/* - Full width opened project <AnchorLink href='#projects'> */}
-                            <img src="/img/project-placeholder.jpg" />
+                            <img src={`img/${props.project.img}`} />
                             <div>
                                 <h2 className="m-project__title">{props.project.title}</h2>
                                 <p className="m-project__description">{props.project.description}</p>
@@ -23,7 +23,7 @@ const Project = (props) => {
                         </div> - not full width opened project*/}
                         <div className="m-project__link">
                             <hr/>
-                            <a className="m-button" target="_blank" href="http://www.google.fr">Voir le projet</a>
+                            <a className="m-button" target="_blank" href={props.project.link}>Voir le projet</a>
                         </div>              
                     </article>
                     {/* - Full width opened project

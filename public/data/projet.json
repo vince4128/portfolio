@@ -1,26 +1,34 @@
 [
     {
         "id":0,
-        "title":"Project1",
-        "description":"Description du projet 1",
-        "tech":"html, css, js"
+        "title":"Quiz maker",
+        "description":"Web app pour la création et le partage de quiz",
+        "tech":"React, Express, REST api, mongoDB",
+        "img":"projet1_t_1.png",
+        "link":"http://138.197.186.223:3001/"
     },
     {        
         "id":1,
-        "title":"Project2",
-        "description":"Description du projet 2",
-        "tech":"html, css, js"
+        "title":"Studio Muro",
+        "description":"Site internet du studio de graphisme Studio Muro",
+        "tech":"React, html, css, js",
+        "img":"projet2_t_1.png",
+        "link":"http://www.studiomuro.com"
     },
     {
         "id":2,
-        "title":"Project3",
-        "description":"Description du projet 3",
-        "tech":"html, css, js"        
+        "title":"Lars Blumers",
+        "description":"Portfolio du réalisateur Lars Blumers",
+        "tech":"React, html, css, js",
+        "img":"projet3_t_1.png",
+        "link":"http://www.larsblumers.com"  
     },
     {    
         "id":3,
-        "title":"Project4",
+        "title":"Quiz",
         "description":"Description du projet 4",
-        "tech":"html, css, js"
+        "tech":"Angular.js, html, css, js",
+        "img":"projet4_t_1.png",
+        "link":"http://37.187.25.65/quizecom/#!/quiz"
     }
 ]
