@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Logo from './Logo';
 
 const debounce = (func, wait) => {
     let timeout;
@@ -64,7 +65,8 @@ class Header extends Component {
                 <div onClick={()=>{this.closeMenuResp()}} className={(this.state.toggleMenuResp ? " o-navbar__overlay" : "")}></div>
                 <ul>
                     <li>
-                        <a href="">Logo</a>
+                        {/*<a href="">Logo</a>*/}
+                        <Logo></Logo>
                     </li>
                     <li onClick={()=>{this.closeMenuResp()}} className={(this.checkClass('Hero') ? 'a-navbar-item--active' : '') + " a-navbar-item--home a-navbar-item"}>
                         <AnchorLink href='#home'>Home</AnchorLink>
@@ -73,7 +75,7 @@ class Header extends Component {
                         <AnchorLink href='#projects'>Projects</AnchorLink>
                     </li>
                     <li onClick={()=>{this.closeMenuResp()}} className={(this.checkClass('Tools') ? 'a-navbar-item--active' : '') + " a-navbar-item"}>
-                        <AnchorLink href='#tools'>Tools</AnchorLink>
+                        <AnchorLink href='#tools'>About</AnchorLink>
                     </li>
                     <li onClick={()=>{this.closeMenuResp()}} className={(this.checkClass('Contact') ? 'a-navbar-item--active' : '') + " a-navbar-item"}>
                         <AnchorLink href='#contact'>Contact</AnchorLink>
