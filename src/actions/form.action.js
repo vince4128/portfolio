@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export function postContact(data){
 
-    const request = axios.post('http://37.187.25.65/html5/sendmail/sendmail.php', data);
+    const request = axios.post('http://138.197.186.223:3005/contact', data);
 
     request.then((r) => {
         console.log('formulaire envoyé ', r);
