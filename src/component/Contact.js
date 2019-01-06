@@ -4,6 +4,8 @@ import { postContact } from '../actions/form.action';
 import { connect } from 'react-redux';
 import axios from 'axios';
 
+const sended = null;
+
 const validate = values => {
     const errors = {}
     if(!values.lastname){
@@ -46,12 +48,24 @@ const renderField = ({
 
 const onSubmit = (values) => {
     console.log('Envoi du mail ', values);
-    postContact(values);
+    postContact(values, (sended)=>{
+        if(sended){
+            //reset();
+        }
+    });
 }
 
 const Contact = (props) => {
 
-    const { handleSubmit, pristine, reset, submitting } = props;
+    const { handleSubmit, pristine, reset, submitting, submitSucceeded } = props;
+
+    const sended = null;
+
+    if(submitSucceeded){
+        reset();
+        //sended = true;
+    }
+
     return(        
         <section id="contact" className="section--contact o-contact">              
             <form onSubmit={handleSubmit(onSubmit)} className="o-contact__form">
@@ -114,6 +128,9 @@ const Contact = (props) => {
                     <button className="m-button" type="submit" disabled={submitting}>Envoyer</button>
                     <button className="m-button" type="button" disabled={pristine || submitting} onClick={reset}>Réinitialiser</button>
                     {/*JSON.stringify(props)*/}
+                </div>
+                <div>
+                    {sended ? "<h1>Mail envoye</h1>" : ""}
                 </div>
             </form>
             <div className="polygon">
