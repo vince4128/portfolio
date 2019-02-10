@@ -11,7 +11,7 @@
         "id":1,
         "title":"Studio Muro",
         "description":"Site internet du studio de graphisme Studio Muro",
-        "tech":"React, html, css, js",
+        "tech":"JS, React, HTML, CSS, SASS",
         "img":"projet2_t_1.png",
         "link":"http://www.studiomuro.com"
     },
@@ -19,15 +19,15 @@
         "id":2,
         "title":"Lars Blumers",
         "description":"Portfolio du réalisateur Lars Blumers",
-        "tech":"React, html, css, js",
+        "tech":"RJS, React, HTML, CSS, SASS",
         "img":"projet3_t_1.png",
         "link":"http://www.larsblumers.com"  
     },
     {    
         "id":3,
         "title":"Quiz",
-        "description":"Description du projet 4",
-        "tech":"Angular.js, html, css, js",
+        "description":"Exemple de quiz en ligne",
+        "tech":"Angular.js, HTML, CSS, JS",
         "img":"projet4_t_1.png",
         "link":"http://37.187.25.65/quizecom/#!/quiz"
     }
