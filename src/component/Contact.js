@@ -3,6 +3,10 @@ import { Field, reduxForm } from 'redux-form';
 import { postContact } from '../actions/form.action';
 import { connect } from 'react-redux';
 import axios from 'axios';
+import LogoGit from './icon/LogoGit';
+import LogoGmail from './icon/LogoGmail';
+import LogoLinkedin from './icon/LogoLinkedin';
+import LogoResume from './icon/LogoResume';
 
 const sended = null;
 
@@ -133,6 +137,10 @@ const Contact = (props) => {
                     {sended ? "<h1>Mail envoye</h1>" : ""}
                 </div>
             </form>
+            <hr/>
+            <div className="m-links">
+                <LogoGit></LogoGit><LogoGmail></LogoGmail><LogoLinkedin></LogoLinkedin><LogoResume></LogoResume>
+            </div>
             <div className="polygon">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 100">
                     <polygon points="0,100 100,0 0,0" opacity="1"></polygon>
