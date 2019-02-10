@@ -28,3 +28,12 @@
     }
 }
 
+#a-navbar-item--cv a{
+    //background:none !important;
+    &:hover{
+        background:none !important;
+        color:#777;
+    }
+
+}
+

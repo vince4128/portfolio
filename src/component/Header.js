@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Route, Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Logo from './Logo';
+import Logo from './icon/Logo';
+import Resume from './Resume';
 
 const debounce = (func, wait) => {
     let timeout;
@@ -79,6 +80,9 @@ class Header extends Component {
                     </li>
                     <li onClick={()=>{this.closeMenuResp()}} className={(this.checkClass('Contact') ? 'a-navbar-item--active' : '') + " a-navbar-item"}>
                         <AnchorLink href='#contact'>Contact</AnchorLink>
+                    </li>
+                    <li id="a-navbar-item--cv" className="a-navbar-item">
+                        <Resume></Resume>
                     </li>
                 </ul>
             </nav>
